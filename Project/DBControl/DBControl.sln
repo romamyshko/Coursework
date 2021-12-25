@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBControl", "DBControl\DBControl.csproj", "{9BAA6A86-8807-4788-84C3-E33F614EFA6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataGenerator", "DataGenerator\DataGenerator.csproj", "{35DA8AED-8959-444A-9ACF-906F628D70CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BAA6A86-8807-4788-84C3-E33F614EFA6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BAA6A86-8807-4788-84C3-E33F614EFA6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BAA6A86-8807-4788-84C3-E33F614EFA6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BAA6A86-8807-4788-84C3-E33F614EFA6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35DA8AED-8959-444A-9ACF-906F628D70CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35DA8AED-8959-444A-9ACF-906F628D70CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35DA8AED-8959-444A-9ACF-906F628D70CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35DA8AED-8959-444A-9ACF-906F628D70CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60FBF9E9-4842-448F-9271-502FB1E80705}
+	EndGlobalSection
+EndGlobal
