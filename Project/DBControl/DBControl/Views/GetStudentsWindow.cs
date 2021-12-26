@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using DBControl.Controllers;
 using DBControl.Models;
+using DiagramGenerator;
+using Microsoft.ML.Transforms;
 
 namespace DBControl.Views
 {
@@ -15,6 +17,8 @@ namespace DBControl.Views
         private readonly StudentController _student;
         private readonly StudentsSubjectsController _studentSubject;
         private readonly GroupController _group;
+        private List<string> _studentsFullnames = new List<string>();
+        private List<double> _studentsAvgMarks = new List<double>();
 
         public GetStudentsWindow(UniversityContext context)
         {
@@ -74,16 +78,7 @@ namespace DBControl.Views
 
                 foreach (var student in students)
                 {
-                    sbs = _studentSubject.GetByStudentId(student.StudentId);
-                    int marks = 0;
-                    int count = 0;
-                    foreach (var studentSubject in sbs)
-                    {
-                        marks += studentSubject.Mark;
-                        count++;
-                    }
-
-                    float avrMark = (float) marks / count;
+                    float avrMark = _studentSubject.GetAverageMark(student.StudentId);
 
                     if (num != -1)
                     {
@@ -108,9 +103,26 @@ namespace DBControl.Views
                             }
                     }
 
+                    _studentsFullnames.Add(student.Fullname);
+                    _studentsAvgMarks.Add(avrMark);
                     var addInfo = $" AVG mark: {avrMark}";
                     Console.WriteLine($"Student\t{student.Fullname} \t[{group}]{addInfo}");
                 }
+
+                Console.WriteLine("To generate diagram enter 'g'");
+                string input = "";
+                while (input != "g")
+                {
+                    input = Console.ReadLine();
+                    if (input == "exit")
+                    {
+                        return;
+                    }
+
+                    Console.WriteLine("Write 'g' or 'exit':");
+                }
+
+                Console.WriteLine($"Diagram was generated to path '{GenerateDiagram()}'");
 
                 Console.WriteLine("\r\nPress any key to return back...");
                 ConsoleKeyInfo key = Console.ReadKey();
@@ -132,5 +144,11 @@ namespace DBControl.Views
             return null;
         }
 
+
+        private string GenerateDiagram()
+        {
+            var generator = new Generator(_studentsFullnames, _studentsAvgMarks);
+            return generator.GenerateDiagram("D:/students_average_mark_diagram.png");
+        }
     }
 }

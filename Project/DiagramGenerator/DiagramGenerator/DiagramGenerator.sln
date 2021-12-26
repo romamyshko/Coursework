@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagramGenerator", "DiagramGenerator\DiagramGenerator.csproj", "{146F79A5-2594-4230-A2DF-C2F427332170}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBControl", "..\..\DBControl\DBControl\DBControl.csproj", "{C666EB95-6491-4B73-8D96-FE136269B1D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{146F79A5-2594-4230-A2DF-C2F427332170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146F79A5-2594-4230-A2DF-C2F427332170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146F79A5-2594-4230-A2DF-C2F427332170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146F79A5-2594-4230-A2DF-C2F427332170}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C666EB95-6491-4B73-8D96-FE136269B1D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C666EB95-6491-4B73-8D96-FE136269B1D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C666EB95-6491-4B73-8D96-FE136269B1D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C666EB95-6491-4B73-8D96-FE136269B1D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46509109-387A-4F6F-BE7A-F4974B63BB48}
+	EndGlobalSection
+EndGlobal

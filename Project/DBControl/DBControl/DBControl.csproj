@@ -17,4 +17,7 @@
     <PackageReference Include="Microsoft.ML.Recommender" Version="0.19.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DiagramGenerator\DiagramGenerator\DiagramGenerator\DiagramGenerator.csproj" />
+  </ItemGroup>
 </Project>

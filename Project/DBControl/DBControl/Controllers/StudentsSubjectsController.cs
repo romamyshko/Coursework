@@ -7,7 +7,7 @@ using DBControl.Models;
 
 namespace DBControl.Controllers
 {
-    internal class StudentsSubjectsController
+    public class StudentsSubjectsController
     {
         private readonly UniversityContext _context;
 
@@ -50,6 +50,20 @@ namespace DBControl.Controllers
         public StudentSubject Get(int id)
         {
             return _context.StudentsSubjects.Find(id);
+        }
+            
+        public float GetAverageMark(int studentId)
+        {
+            var sbs = GetByStudentId(studentId);
+            int marks = 0;
+            int count = 0;
+            foreach (var studentSubject in sbs)
+            {
+                marks += studentSubject.Mark;
+                count++;
+            }
+
+            return (float) marks / count;
         }
 
         public int Delete(int id)

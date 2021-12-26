@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DBControl.Controllers;
 using DBControl.Models;
+using DiagramGenerator;
 
 namespace DBControl.Views
 {
@@ -68,24 +69,51 @@ namespace DBControl.Views
                 return;
             }
 
-            var subjects = new List<Subject>();
-            var marks = new List<int>();
+            var subjectsMarks = new Dictionary<string, double>();
 
             foreach (var studentSubject in sbs)
             {
                 var subj = _subject.Get(studentSubject.SubjectId);
-                subjects.Add(subj);
-                marks.Add(studentSubject.Mark);
+                if (subjectsMarks.ContainsKey(subj.Name))
+                {
+                    subjectsMarks[subj.Name] = (subjectsMarks[subj.Name] + studentSubject.Mark) / 2;
+                }
+                else
+                {
+                    subjectsMarks.Add(subj.Name, studentSubject.Mark);
+                }
 
                 Console.WriteLine($"Subjects: {subj.Name}, Mark: {studentSubject.Mark}");
             }
 
-            Console.ReadLine();
+            Console.WriteLine("To generate diagram enter 'g'");
+            string input = "";
+            while (input != "g")
+            {
+                input = Console.ReadLine();
+                if (input == "exit")
+                {
+                    return;
+                }
+
+                Console.WriteLine("Write 'g' or 'exit':");
+            }
+
+            Console.WriteLine($"Diagram was generated to path '{GenerateDiagram(subjectsMarks)}'");
+
+            Console.WriteLine("\r\nPress any key to return back...");
+            ConsoleKeyInfo key = Console.ReadKey();
         }
 
         private string[] GetFullname(string input)
         {
             return input.Split(' ');
+        }
+
+        private string GenerateDiagram(Dictionary<string, double> subjectsMarks)
+        {
+            var generator = new Generator(subjectsMarks);
+            return generator.GenerateDiagram("D:/subjects_average_mark_diagram.png");
         }
     }
 }
