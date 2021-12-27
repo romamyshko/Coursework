@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DBControl.Controllers.CourseController" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAABABAAAAAAAAAAAEAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Controllers\CourseController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Controllers.FacultyController" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAABABAAAAAAAAAAAEAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Controllers\FacultyController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Controllers.GroupController" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAABABAAAAAAAAAIAEAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Controllers\GroupController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Controllers.StudentController" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAIAAAABABAAAAAAAAAAAEAAABAAAAAAAIAAAA=</HashCode>
+      <FileName>Controllers\StudentController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Controllers.StudentsSubjectsController" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAABABAAAAAACAAAAEAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Controllers\StudentsSubjectsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Controllers.SubjectController" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAABABAAAAAAAAAAAEAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\SubjectController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Models.Course" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAEAQAAAAAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Course.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Models.DbConnectionInfo" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DbConnectionInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Models.Faculty" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAQAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Models\Faculty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Models.Group" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIEAAAEAAAAAAAAAIAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Group.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Models.Student" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAEAEAAAAAAAAAAAAAAAAACAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Models\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Models.StudentSubject" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAUAABAAAAAIAAAAAAAAAAAAAAAACAAAACAAA=</HashCode>
+      <FileName>Models\StudentSubject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Models.Subject" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAQAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Subject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Models.UniversityContext" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAAEBAAQAQAAAAAAAAAAAAECAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Models\UniversityContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Views.AddStudentWindow" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAABAAAAAAEAAAAAAAAAAABBAAAAQAAIAI=</HashCode>
+      <FileName>Views\AddStudentWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Views.EditStudentWindow" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\EditStudentWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Views.GetStudentsWindow" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAEBAAAIAABAAAAAAAAAAABABAAAAAAIAI=</HashCode>
+      <FileName>Views\GetStudentsWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Views.ShowStudentWindow" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAIAAAAABAAAIAAAAAAAACAAAAAAABAAAAAAAAI=</HashCode>
+      <FileName>Views\ShowStudentWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Views.StartWindow" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAABAAAAAAAAAI=</HashCode>
+      <FileName>Views\StartWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.MLModel1" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAACAIAAAAAAAAAAAAAAAAAAAAAAgAAQAAg=</HashCode>
+      <FileName>MLModel1.consumption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBControl.Program" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
