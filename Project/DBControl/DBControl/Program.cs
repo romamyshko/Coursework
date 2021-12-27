@@ -18,8 +18,6 @@ namespace DBControl
             DbConnectionInfo connection = GetConnectionFromJson(jsFilepath);
 
             UniversityContext context = new UniversityContext(connection);
-            Generator d = new Generator();
-            d.Generate();
 
             StartWindow startWindow = new StartWindow(context);
             startWindow.Run();
